@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+.flex-container {
+    display: flex;
+    background-color: #166F86;
+    width: 80%;
+    padding: 30px;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+}
+.flex-container div {
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    height: 100px;
+    background-color: #C1DFE1;
+    font-size: 30px;
+}
+.flex_1-container {
+    display: flex;
+    height: auto;
+    background-color: #EC4548;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+}
+.flex_1-container div {
+    background-color: #C59494;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    flex-wrap: wrap-reverse;
+}
+header, nav, main, footer {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+nav {
+    background-color: #577D98;
+    height: auto;
+}
+main {
+    background-color: #81A8BB;
+}
+footer {
+    background-color: #02486F;
+    color: #E1ECEB;
+    text-align: center;
+    font-size: large;
+}
+header {
+    background-color: #029DA4;
+    color: #FFFFFF;
+    text-align: center;
+}
+.flex-2-container {
+    display: flex;
+    background-color: #1F5C4E;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-between;
+}
+.flex-2-container div {
+    background-color: #05C587;
+    width: 80px;
+    margin: 20px;
+    padding: 20px;
+    height: 100px;
+}
+.flex_1-container div {
+}
+.flen_3-container {
+    display: flex;
+    background-color: #57668A;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    height: auto;
+    align-items: baseline;
+}
+.flen_3-container div {
+    width: 80px;
+    padding: 10px;
+    margin: 20px;
+    height: auto;
+    background-color: #5384E8;
+    color: #F8F7F7;
+}
+.flex_4-contanier {
+    background-color: #18A890;
+    color: #F1E8E8;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500PX;
+    align-content: space-around;
+}
+.flex_4-contanier div {
+    background-color: #0D7463;
+    padding: 30px;
+    margin: 20px;
+    width: 80px;
+    height: 20PX;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+    	ul{
+				list-style-type: square;
+				padding: 20px;
+			}
+			nav ul{
+				list-style-type: none;
+			}
+			nav ul li {
+    color: #418EAF;
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: medium;
+    margin: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+			}
+			ul li a {
+    text-decoration: none;
+    color: #111111;
+}
+ul li a:hover  {
+    text-decoration: none;
+    color: #4E9FB8;
+    font-size: 20px;
+    background-color: #0E636A;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100px;
+    box-shadow: 10px 0px 10px #61B0A0;
+    -webkit-box-shadow: 10px 0px 10px #61B0A0;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>FLEXBOX´S&nbsp;</h1>
+</header>
+<nav>
+     <ul>
+       <li><a href="index.html">INICIO</a></li>
+       <li><a href="formatos_texto.html" target="new">TEXTO</a></li>
+       <li><a href="tablas.html" target="new">TABLAS</a></li>
+       <li><a href="audio.html" target="new">AUDIO</a></li>
+       <li><a href="imagenes.html" target="new">IMAGENES</a></li>
+       <li><a href="videos.html" target="new">VIDEOS</a></li>
+       <li><a href="animacionb.html">ANIMACIÓN</a></li>
+       <li><a href="flexbox.html">FLEXBOX</a></li>
+      </ul>    
+</nav>
+<main> 
+  <section>
+<h2>Flex-Direction&nbsp;</h2>
+<div class="flex-container">
+<div>
+  Caja 1</div>
+      <div>Caja 2</div>
+      <div>Caja 3</div>
+</div>
+&nbsp;</section>
+<section>
+    <h2>Flex-Wrap (envolvente)</h2>
+    <div class="flex_1-container">
+<div>
+  Caja 1</div>
+      <div>Caja 2</div>
+      <div>Caja3 </div>
+      <div>Caja4</div>
+      <div>Caja5</div>
+      <div>Caja 6&nbsp;</div>
+      <div>Caja 7&nbsp;</div>
+      <div>Caja 8&nbsp;</div>
+    </div>
+  &nbsp;</section>
+  <section>
+    <h2>Justify-Content&nbsp;</h2>
+    <div class="flex-2-container">
+      <div>
+    Caja 1</div>
+      <div>Caja 2</div>
+      <div>Caja 3</div>
+</div>
+  &nbsp;</section>
+<section>
+    <h2>Aling-Items&nbsp;</h2>
+    <div class="flen_3-container">
+      <div>Caja 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptate nisi quidem ipsam, ratione corporis ipsa numquam cumque accusantium, ullam!</div>
+      <div>Caja 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus temporibus corrupti esse ad distinctio, nam adipisci perferendis nemo eligendi nisi commodi similique dolor, asperiores quibusdam possimus! Dignissimos autem nam earum.</div>
+      <div>Caja 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, atque.</div>
+      <div>Caja 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloribus necessitatibus dolorum iusto at, rem error? Recusandae temporibus explicabo dicta, qui non quaerat voluptatem in, praesentium dolorem, alias illo doloribus, nemo. Ab, officiis quisquam consectetur impedit fugit quidem dolorem dolores.</div>
+    </div>
+    <section>
+      <h2>Aline-Content&nbsp;</h2>
+      <div class="flex_4-contanier">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+        <div>Caja 5</div>
+        <div>Caja 6</div>
+        <div>Caja 7</div>
+        <div>Caja 8</div>
+      </div>
+  &nbsp;</section>
+  &nbsp;</section>
+</main>
+<footer>
+  <h5>Elaborado por Alisson Alvarez Armenta&nbsp;</h5>
+</footer>
+</body>
+</html>
